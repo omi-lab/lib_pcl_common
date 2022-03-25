@@ -58,10 +58,10 @@
 /* #undef HAVE_SSE2_EXTENSIONS */
 /* #undef HAVE_SSE_EXTENSIONS */
 
-#define HAVE_PNG
+/* #define HAVE_PNG */
 
 /* Precompile for a minimal set of point types instead of all. */
-/* #undef PCL_ONLY_CORE_POINT_TYPES */
+#define PCL_ONLY_CORE_POINT_TYPES
 
 /* Do not precompile for any point types at all. */
 /* #undef PCL_NO_PRECOMPILE */
@@ -93,5 +93,5 @@
 /* Version of OpenGL used by VTK as rendering backend */
 #define VTK_RENDERING_BACKEND_OPENGL_VERSION 2
 
-#define HAVE_QVTK 1
+/* #define HAVE_QVTK 1 */
 

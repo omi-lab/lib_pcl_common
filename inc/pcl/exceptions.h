@@ -78,7 +78,7 @@ namespace pcl
       {}
       
       const char*
-      getFileName () const throw ()
+      getFilename () const throw ()
       {
         return (file_name_);
       }

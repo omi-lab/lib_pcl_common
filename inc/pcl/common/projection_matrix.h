@@ -64,7 +64,7 @@ namespace pcl
   estimateProjectionMatrix (typename pcl::PointCloud<PointT>::ConstPtr cloud, Eigen::Matrix<float, 3, 4, Eigen::RowMajor>& projection_matrix, const Indices& indices = {});
   
   /** \brief Determines the camera matrix from the given projection matrix.
-    * \note This method does NOT use a RQ decomposition, but uses the fact that the left 3x3 matrix P' of P squared eliminates the rotational part.
+    * \note This method does NOT use a RQ descene, but uses the fact that the left 3x3 matrix P' of P squared eliminates the rotational part.
     *       P' = K * R -> P' * P'^T = K * R * R^T * K = K * K^T
     * \param[in] projection_matrix
     * \param[out] camera_matrix

@@ -113,10 +113,10 @@ void kiss_fftr(kiss_fftr_cfg st,const kiss_fft_scalar *timedata,kiss_fft_cpx *fr
         C_SUB( f2k, fpk , fpnk );
         C_MUL( tw , f2k , st->super_twiddles[k-1]);
 
-        freqdata[k].r = HALF_OF(f1k.r + tw.r);
-        freqdata[k].i = HALF_OF(f1k.i + tw.i);
-        freqdata[ncfft-k].r = HALF_OF(f1k.r - tw.r);
-        freqdata[ncfft-k].i = HALF_OF(tw.i - f1k.i);
+        freqdata[k].r = (f1k.r + tw.r)*0.5f;
+        freqdata[k].i = (f1k.i + tw.i)*0.5f;
+        freqdata[ncfft-k].r = (f1k.r - tw.r)*0.5f;
+        freqdata[ncfft-k].i = (tw.i - f1k.i)*0.5f;
     }
 }
 

@@ -44,7 +44,7 @@
 namespace pcl 
 {
   /** Principal Component analysis (PCA) class.\n
-    *  Principal components are extracted by singular values descene on the 
+    *  Principal components are extracted by singular values decomposition on the 
     * covariance matrix of the centered input cloud. Available data after pca computation 
     * are:\n
     * - The Mean of the input data\n
